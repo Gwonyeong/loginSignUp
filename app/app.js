@@ -14,6 +14,5 @@ app.use(express.static(`${__dirname}/src/public`))
 app.use("/", home);//root경로로 오면 home미들웨어로 이동한다.
 
 
-
 module.exports = app;
 

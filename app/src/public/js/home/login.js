@@ -1,3 +1,16 @@
 "use strict";
 
-console.log("안녕!")
+const id = document.querySelector("#id"),
+    pw = document.querySelector("#pw"),
+    loginBtn = document.querySelector("button");
+
+console.log(id)
+loginBtn.addEventListener("click", login);
+
+function login(){
+    const req = {
+        id : id.value,
+        psword: pw.value,
+    }
+    console.log(req)
+}
